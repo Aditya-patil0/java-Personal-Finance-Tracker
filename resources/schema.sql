@@ -1,0 +1,10 @@
+CREATE DATABASE FinanceTracker;
+
+USE FinanceTracker;
+
+CREATE TABLE Expenses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category VARCHAR(100) NOT NULL,
+    amount DOUBLE NOT NULL,
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
